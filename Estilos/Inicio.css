@@ -62,7 +62,20 @@ nav.cambio a:hover {
 
     .icono-noti {
       height: 24px;
+      transition: transform 0.3s ease
     }
+    .icono-noti:hover {
+    transform: translateY(-10px);
+  }
+  
+  .perfil-usuario {
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+.perfil-usuario:hover {
+    
+    transform: translate3d(0, -10px, 0);
+  }
 
     .perfil-usuario {
       display: flex;

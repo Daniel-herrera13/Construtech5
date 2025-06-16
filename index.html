@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="Estilos/Inicio.css">
+    <link rel="shortcut icon" href="Imagenes/Logo.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+  <div class="logo">
+    <a href="index.html">
+      <img src="Imagenes/Logo.png" alt="Logo" class="logoimg">
+    </a>
+  </div>
+
+  <!-- Botón hamburguesa -->
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Menú navegación -->
+  <nav class="cambio" id="menu">
+    <a href="index.html" class="activo">Inicio</a>
+    <a href="Galeria.html">Catálogo</a>
+    <a href="Nuestros contactos.html">Contáctanos</a>
+  </nav>
+
+  <!-- Iconos -->
+  <div class="iconos-header">
+    <a href="Notificaciones2.html"><img src="https://cdn-icons-png.flaticon.com/512/3602/3602145.png" alt="Notificaciones" class="icono-noti"></a>
+    <div class="perfil-usuario">
+      <a href="Usuario.html"><img src="Imagenes/usuariooff.png" alt="Usuario"></a>
+      <span class="estado-online"></span>
+    </div>
+  </div>
+</header>
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("menu");
+
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+</script>
+    <div class="titular">
+        <center>
+            <h1 class="titulo">
+                Tus planos favoritos <br> y confiables a tu alcance
+            </h1>
+
+            <p class="descripcion">
+                Comienza a explorar nuestra galeria para encontrar los mejores planos de <br>
+                Casas, Carwash y más en tan solo un par de clicks al alcance de tu mano
+            </p>
+
+            <a href="Galeria.html"><button class="btn1">Comenzar</button></a>
+        </center>
+    </div>
+    <div class="ventajas">
+            <div class="card">
+                <h3>Accesibles</h3>
+                <p>Descubre los mejores planos al mejor precio para construir tus sueños, incluso podras encontrar ideas para remodelar tu hogar o tu negocio todo en Construtech5.</p>
+            </div>
+
+            <div class="card">
+                <h3>La mayor confianza</h3>
+                <p>Somos un equipo apasionado por la tecnología, la ingeniería y el desarrollo de soluciones reales para nuestro país. Y venimos a presentarles Construtech5, la plataforma digital que está revolucionando la forma en que diseñamos y planificamos proyectos de construcción en El Salvador</p>
+            </div>
+    </div>
+<br>
+<br>
+</body>
+</html>

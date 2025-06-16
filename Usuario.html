@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil de Usuario</title>
+  <link rel="stylesheet" href="Estilos/Usuario.css">
+  <link rel="stylesheet" href="Estilos/Inicio.css">
+  <link rel="shortcut icon" href="Imagenes/logo.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+  <div class="logo">
+    <a href="Index.html">
+      <img src="Imagenes/Logo.png" alt="Logo" class="logoimg">
+    </a>
+  </div>
+
+  <!-- Botón hamburguesa -->
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Menú navegación -->
+  <nav class="cambio" id="menu">
+    <a href="Index.html">Inicio</a>
+    <a href="Galeria.html">Catálogo</a>
+    <a href="Nuestros contactos.html" class="activo">Contáctanos</a>
+  </nav>
+
+  <!-- Iconos -->
+  <div class="iconos-header">
+    <a href="Notificaciones2.html"><img src="https://cdn-icons-png.flaticon.com/512/3602/3602145.png" alt="Notificaciones" class="icono-noti"></a>
+    <div class="perfil-usuario">
+      <a href="Usuario.html"><img src="Imagenes/usuariooff.png" alt="Usuario"></a>
+      <span class="estado-online"></span>
+    </div>
+  </div>
+</header>
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("menu");
+
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+</script>
+  <main>
+    <section class="perfil">
+      <div class="foto-usuario">
+        <img src="Imagenes/user.png" alt="Foto Usuario">
+      </div>
+      <div class="info-usuario">
+        <span class="estado">Online</span>
+        <h1>Username</h1>
+        <p>Usuario</p>
+        <a href="Editar Usuario.html"><button class="btn-editar">Editar usuario</button></a>
+        <a href="index.html"><button class="btn-cerrar">Ir al inicio</button></a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

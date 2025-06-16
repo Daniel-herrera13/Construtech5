@@ -1,0 +1,272 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos base (móviles) */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.logoimg {
+  width: 50px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  flex: 1 1 100%;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+nav a.activo {
+  font-weight: bold;
+}
+
+.btn-registrarse {
+  background-color: black;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+  gap: 30px;
+}
+
+.contactos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.info-contacto {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.info-contacto h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.contacto {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contacto .icono {
+  width: 24px;
+  margin-right: 10px;
+}
+
+.imagen-laptop img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Fuentes Montserrat y Roboto (con corrección de propiedades) */
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* valor válido */
+  font-style: normal;
+}
+
+.roboto-uniquifier {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* valor válido */
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.iconos-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icono-noti {
+  width: 20px;
+  height: 20px;
+}
+
+.perfil-usuario {
+  position: relative;
+}
+
+.perfil-usuario img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.estado-online {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #00C851;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+/* Navegación cambio (links) */
+.cambio a {
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
+}
+
+.cambio a.activo {
+  font-weight: bold;
+  
+  
+}
+
+/* Enlaces genéricos */
+.enlace {
+  text-decoration: none;
+  color: inherit;
+  cursor: default;
+}
+
+.enlace:hover {
+  text-decoration: underline;
+  color: #7b9cff;
+}
+
+/* --- Media Queries para tablets y desktops --- */
+@media (min-width: 600px) {
+  header {
+    padding: 20px 50px;
+    flex-wrap: nowrap;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .logoimg {
+    width: 70px;
+    height: 60px;
+  }
+
+  nav {
+    flex: none;
+    justify-content: flex-start;
+  }
+
+  nav a {
+    margin: 0 20px;
+    font-size: 16px;
+  }
+
+  .btn-registrarse {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  main {
+    flex-direction: row;
+    padding: 50px;
+  }
+
+  .contactos {
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    width: auto;
+  }
+
+  .info-contacto {
+    max-width: 400px;
+    padding: 30px;
+  }
+
+  .info-contacto h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .contacto .icono {
+    width: 30px;
+    margin-right: 15px;
+  }
+
+  .imagen-laptop img {
+    width: 600px;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  .iconos-header {
+    gap: 20px;
+  }
+
+  .icono-noti {
+    width: 24px;
+    height: 24px;
+  }
+
+  .perfil-usuario img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .estado-online {
+    width: 10px;
+    height: 10px;
+  }
+}

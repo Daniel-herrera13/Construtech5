@@ -1,0 +1,192 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #222;
+    }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+
+    nav.cambio a {
+  margin: 0 20px;
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+nav.cambio a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #2a5bd7;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+nav.cambio a:hover::after {
+  transform: scaleX(1);
+}
+
+nav.cambio a:hover {
+  color: #2a5bd7;
+}
+    .iconos-header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .icono-noti {
+      height: 24px;
+    }
+
+    .perfil-usuario {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .perfil-usuario img {
+      height: 32px;
+      width: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .estado-online {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 10px;
+      width: 10px;
+      background-color: limegreen;
+      border-radius: 50%;
+      border: 2px solid white;
+    }
+
+    /* Botón hamburguesa */
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle span {
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+      margin: 4px 0;
+    }
+
+    /* Titular */
+    .titular {
+      padding: 60px 20px 20px;
+      text-align: center;
+    }
+
+    .titulo {
+      font-size: 3rem;
+      font-weight: 800;
+      color: #1e56a0;
+      margin-bottom: 20px;
+    }
+
+    .descripcion {
+      font-size: 1.1rem;
+      color: #235abf;
+      margin-bottom: 30px;
+    }
+
+    .btn1 {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      padding: 12px 30px;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn1:hover {
+      background-color: #444;
+    }
+
+    .ventajas {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+    }
+
+    .card {
+      border: 1px solid #333;
+      padding: 20px;
+      width: 300px;
+      border-radius: 15px;
+      text-align: left;
+      background-color: #f9f9f9;
+    }
+
+    .card h3 {
+      color: #1e56a0;
+      margin-bottom: 10px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav.cambio {
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        padding: 10px 20px;
+        border-top: 1px solid #ccc;
+      }
+
+      nav.cambio.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+
+      .ventajas {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card {
+        width: 90%;
+      }
+    }

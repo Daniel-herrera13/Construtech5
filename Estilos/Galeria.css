@@ -1,0 +1,206 @@
+/* Estilos base (móviles) */
+
+body {
+  background-color: white;
+  color: black;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+  margin: 0;
+}
+
+.catalogo {
+  padding: 30px 10px;
+  text-align: center;
+}
+
+.titule {
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px; /* más pequeño para móviles */
+  margin-top: 10px;
+}
+
+.titulo-catalogo {
+  font-size: 32px; /* más pequeño para móviles */
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.categorias,
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.tarjeta,
+.producto {
+  background: #f9f9f9;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 100%; /* en móvil ocupa todo el ancho */
+  max-width: 280px; /* limita ancho máximo */
+  text-align: center;
+  transition: transform 0.3s ease;
+  margin: 10px 0;
+}
+
+.tarjeta:hover,
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.tarjeta h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.tarjeta p {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.tarjeta button {
+  background: #000;
+  color: white;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.tarjeta button:hover {
+  background-color: #333;
+}
+
+/* Enlaces de navegación */
+.cambio a {
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+.cambio a.activo {
+  font-weight: bold;
+}
+
+/* Botón general */
+.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 14px;
+}
+
+/* Carrusel */
+
+#carouselCategorias {
+  position: relative;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 30px;
+  height: 30px;
+  background-size: 100% 100%;
+  background-color: #000;
+}
+
+/* Posición de botones del carrusel en móvil */
+.carousel-control-prev {
+  left: 5px !important; /* cerca al borde */
+}
+
+.carousel-control-next {
+  right: 5px !important;
+}
+
+/* --- Media Queries para pantallas más grandes --- */
+@media (min-width: 600px) {
+  .titule {
+    font-size: 45px;
+  }
+  .titulo-catalogo {
+    font-size: 40px;
+  }
+  
+  .tarjeta,
+  .producto {
+    width: 45%; /* dos tarjetas por fila */
+    padding: 25px;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    margin: 15px;
+  }
+  
+  .tarjeta img {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .tarjeta h2 {
+    font-size: 20px;
+  }
+  
+  .tarjeta p {
+    font-size: 14px;
+  }
+  
+  .tarjeta button {
+    padding: 10px 30px;
+    font-size: 14px;
+  }
+  
+  /* Carrusel: se separan más los botones */
+  .carousel-control-prev {
+    left: -50px !important;
+  }
+  
+  .carousel-control-next {
+    right: -50px !important;
+  }
+}
+
+@media (min-width: 900px) {
+  .tarjeta,
+  .producto {
+    width: 280px; /* fijo para desktop */
+  }
+  
+  .titule {
+    font-size: 50px;
+  }
+  
+  .titulo-catalogo {
+    font-size: 48px;
+  }
+  
+  /* Carrusel: separación máxima */
+  .carousel-control-prev {
+    left: -100px !important;
+  }
+  
+  .carousel-control-next {
+    right: -100px !important;
+  }
+}

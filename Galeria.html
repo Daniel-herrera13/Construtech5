@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias</title>
+    <link rel="stylesheet" href="Estilos/Galeria.css">
+    <link rel="stylesheet" href="Estilos/Inicio.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="shortcut icon" href="Imagenes/logo.png" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+  <div class="logo">
+    <a href="Index.html">
+      <img src="Imagenes/Logo.png" alt="Logo" class="logoimg">
+    </a>
+  </div>
+
+  <!-- Botón hamburguesa -->
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Menú navegación -->
+  <nav class="cambio" id="menu">
+    <a href="Index.html">Inicio</a>
+    <a href="Galeria.html" class="activo">Catálogo</a>
+    <a href="Nuestros contactos.html">Contáctanos</a>
+  </nav>
+
+  <!-- Iconos -->
+  <div class="iconos-header">
+    <a href="Notificaciones2.html"><img src="https://cdn-icons-png.flaticon.com/512/3602/3602145.png" alt="Notificaciones" class="icono-noti"></a>
+    <div class="perfil-usuario">
+      <a href="Usuario.html"><img src="Imagenes/usuariooff.png" alt="Usuario"></a>
+      <span class="estado-online"></span>
+    </div>
+  </div>
+</header>
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("menu");
+
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+</script>
+
+    <section class="catalogo">
+            <h1 class="titulo-catalogo">Galeria</h1>
+        <div class="carrusel">
+            <div class="carrusel-imagenes" id="imagenes">
+                <div class="categorias">
+                    <div id="carouselCategorias" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-4">
+                                <div class="tarjeta">
+                                    <img src="Imagenes/plano 1.jpg" alt="Plano">
+                                    <h2>Casa de un nivel</h2>
+                                    <p>Casa con medidas de 7x9</p>
+                                </div>
+                                </div>
+                                <div class="col-md-4">
+                                <div class="tarjeta">
+                                    <img src="Imagenes/Plano 2.jpg" alt="Oficina">
+                                    <h2>Vivienda</h2>
+                                    <p>Casa de un nivel con medidas 10x20.</p>
+                                </div>
+                                </div>
+                                <div class="col-md-4">
+                                <div class="tarjeta">
+                                    <img src="Imagenes/Plano 3.jpg" alt="Escolar">
+                                    <h2>Vivienda</h2>
+                                    <p>Fachada de una vivienda.</p>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+
+                            <!-- Segunda slide (agrega más tarjetas aquí) -->
+                            <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                <div class="tarjeta">
+                                    <img src="Imagenes/plano 4.jpg" alt="Ejemplo">
+                                    <h2>Vivienda</h2>
+                                    <p>Plano de una vivienda.</p>
+                                </div>
+                                </div>
+                                <div class="col-md-4">
+                                <div class="tarjeta">
+                                    <img src="Imagenes/Plano 5.jpg" alt="Otro">
+                                    <h2>Primera Nivel</h2>
+                                    <p>Plano del primer nivel de una vivienda de 2 niveles.</p>
+                                </div>
+                                </div>
+                                <div class="col-md-4">
+                                <div class="tarjeta">
+                                    <img src="Imagenes/Plano 6.jpg" alt="Más">
+                                    <h2>Car Wash</h2>
+                                    <p>Plano de una planta arquitectónica de un carwash.</p>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- Controles -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCategorias" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                        </button>
+                            
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselCategorias" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </section>  
+
+</body>
+</html>

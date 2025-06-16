@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros contactos</title>
+    <link rel="stylesheet" href="Estilos/Nuestros estilos.css">
+    <link rel="stylesheet" href="Estilos/Inicio.css">
+    <link rel="shortcut icon" href="Imagenes/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+  <div class="logo">
+    <a href="Index.html">
+      <img src="Imagenes/Logo.png" alt="Logo" class="logoimg">
+    </a>
+  </div>
+
+  <!-- Botón hamburguesa -->
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Menú navegación -->
+  <nav class="cambio" id="menu">
+    <a href="Index.html">Inicio</a>
+    <a href="Galeria.html">Catálogo</a>
+    <a href="Nuestros contactos.html" class="activo">Contáctanos</a>
+  </nav>
+
+  <!-- Iconos -->
+  <div class="iconos-header">
+    <a href="Notificaciones2.html"><img src="https://cdn-icons-png.flaticon.com/512/3602/3602145.png" alt="Notificaciones" class="icono-noti"></a>
+    <div class="perfil-usuario">
+      <a href="Usuario.html"><img src="Imagenes/usuariooff.png" alt="Usuario"></a>
+      <span class="estado-online"></span>
+    </div>
+  </div>
+</header>
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("menu");
+
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+</script>
+    
+
+    <main>
+        <section class="contactos">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="info-contacto">
+                <h1 class="roboto-uniquifier">Nuestros contactos</h1>
+                <div class="contacto">
+                    <img src="Imagenes/Logo instagram.png" alt="Instagram" class="icono">
+                    <span class="montserrat">instagram/@construtech5publi</span>
+                </div>
+                <div class="contacto">
+                  <img src="Imagenes/facebook.png" alt="Facebook" class="icono">
+                    <span class="montserrat">Facebook/@construtech5ads</span>
+                </div>
+                <div class="contacto">
+                    <img src="Imagenes/Telefono.png" alt="Teléfono" class="icono">
+                    <span>+503 7001-6383</span>
+                </div>
+                <div class="contacto">
+                   <img src="Imagenes/correo.png" alt="Correo" class="icono">
+                    <span class="montserrat">construtech5publicidad@gmail.com</span>
+                </div>
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="imagen-laptop">
+                <img src="Imagenes/Logo.png" alt="Logo">
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

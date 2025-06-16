@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asesoría Personalizada | Construtech5</title>
+  <link rel="stylesheet" href="Estilos/Asesoria.css">
+  <link rel="stylesheet" href="Estilos/Inicio.css">
+  <link rel="shortcut icon" href="Imagenes/Logo.png" type="image/x-icon">
+</head>
+<body>
+
+  <header>
+  <div class="logo">
+    <a href="index.html">
+      <img src="Imagenes/Logo.png" alt="Logo" class="logoimg">
+    </a>
+  </div>
+
+  <!-- Botón hamburguesa -->
+  <div class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Menú navegación -->
+  <nav class="cambio" id="menu">
+    <a href="index.html">Inicio</a>
+    <a href="Galeria.html">Catálogo</a>
+    <a href="Nuestros contactos.html">Contáctanos</a>
+    <a href="Asesoria.html"class="activo">Asesoría</a>
+  </nav>
+
+  <!-- Iconos -->
+  <div class="iconos-header">
+    <a href="Notificaciones2.html"><img src="https://cdn-icons-png.flaticon.com/512/3602/3602145.png" alt="Notificaciones" class="icono-noti"></a>
+    <div class="perfil-usuario">
+      <a href="Usuario.html"><img src="Imagenes/usuariooff.png" alt="Usuario"></a>
+      <span class="estado-online"></span>
+    </div>
+  </div>
+</header>
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("menu");
+
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+</script>
+
+  <main class="contenedor-asesoria">
+    <h1>Solicita tu Asesoría Personalizada</h1>
+    <p>¿Tienes dudas sobre qué diseño se adapta mejor a tus necesidades? Déjanos tus datos y un asesor se pondrá en contacto contigo.</p>
+
+    <form class="formulario-asesoria">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <label for="proyecto">Tipo de proyecto:</label>
+      <select id="proyecto" name="proyecto" required>
+        <option value="">Selecciona uno</option>
+        <option value="vivienda">Vivienda</option>
+        <option value="apartamento">Apartamento</option>
+        <option value="comercial">Comercial / Local</option>
+        <option value="otro">Otro</option>
+      </select>
+
+      <label for="mensaje">Cuéntanos tu idea:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" placeholder="Describe brevemente tu proyecto..."></textarea>
+
+      <button type="submit">Enviar solicitud</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Construtech5. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
